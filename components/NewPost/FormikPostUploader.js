@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import * as Yup from "yup";
 import { Formik } from "formik";
 import { useNavigation } from "@react-navigation/native";
-// import { Divider } from "@rneui/base";
+import { Divider } from "@rneui/base";
 import validUrl from "valid-url";
 import {
   getFirestore,
@@ -117,7 +117,7 @@ const FormikPostUploader = () => {
               />
             </View>
           </View>
-          {/* <Divider width={0.2} orientation="vertical" /> */}
+          <Divider width={0.2} orientation="vertical" />
           <TextInput
             onChange={(e) => setImageUrl(e.nativeEvent.text)}
             style={{ color: "white", fontSize: 18 }}

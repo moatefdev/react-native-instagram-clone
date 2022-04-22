@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import React, { useState, useEffect } from "react";
-// import { Divider } from "@rneui/themed";
+import { Divider } from "@rneui/themed";
 import { FontAwesome, FontAwesome5 } from "@expo/vector-icons";
 import { getAuth } from "firebase/auth";
 import {
@@ -36,7 +36,7 @@ const Post = ({ post }) => {
   };
   return (
     <View style={{ marginBottom: 30 }}>
-      {/* <Divider width={1} orientation="vertical" /> */}
+      <Divider width={1} orientation="vertical" />
       <PostHeader post={post} />
       <PostImage post={post} />
       <PostFooter post={post} handleLike={handleLike} />
